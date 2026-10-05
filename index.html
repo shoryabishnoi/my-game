@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Skyline Flight</title>
+<style>
+  :root {
+    --bg: #eef1f5;
+    --ink: #14202e;
+    --muted: #5b6878;
+    --accent: #0f8b8d;
+    box-sizing: border-box;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) { --bg: #0b121b; --ink: #e8eef5; --muted: #8b99aa; }
+  }
+  :root[data-theme="dark"] { --bg: #0b121b; --ink: #e8eef5; --muted: #8b99aa; }
+  html { scroll-padding-top: env(safe-area-inset-top, 0px); }
+  html, body { height: 100%; margin: 0; }
+  body { background: var(--bg); color: var(--ink); font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; overflow: hidden; }
+  header { width: min(100%, 360px); display: flex; justify-content: space-between; align-items: baseline; padding: 0 4px; box-sizing: border-box; }
+  h1 { margin: 0; font-size: .95rem; font-weight: 650; letter-spacing: .08em; text-transform: uppercase; }
+  #best { font-size: .8rem; color: var(--muted); font-variant-
